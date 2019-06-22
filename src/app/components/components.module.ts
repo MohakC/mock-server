@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 
+import * as ngMaterial from '@angular/material';
 import * as component from './';
 
 const ngModules = [
-
+  ngMaterial.MatToolbarModule
 ];
 
 const ALL_COMPONENTS = [
