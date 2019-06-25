@@ -1,14 +1,18 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 import * as ngMaterial from '@angular/material';
 import * as component from './';
 
 const ngModules = [
-  ngMaterial.MatToolbarModule
+  ngMaterial.MatToolbarModule,
+  ngMaterial.MatCardModule
 ];
 
 const ALL_COMPONENTS = [
-  component.HeaderComponent
+  component.HeaderComponent,
+  component.HttpListComponent,
+  component.BodyComponent
 ];
 
 @NgModule({
@@ -16,7 +20,8 @@ const ALL_COMPONENTS = [
     ALL_COMPONENTS
   ],
   imports: [
-    ngModules
+    ngModules,
+    CommonModule
   ],
   exports: [
     ALL_COMPONENTS,
